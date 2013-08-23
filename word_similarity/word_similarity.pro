@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui \
-            sql
+            core sql
 
 QMAKE_CXXFLAGS += -std=c++11
 

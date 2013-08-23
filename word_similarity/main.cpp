@@ -21,13 +21,21 @@ int main(int argc, char *argv[])
     db.setPassword("1234");
 
     w.show();
-
     if(!db.open()) {
         QMessageBox::critical(0, QObject::tr("Database Error"), "Imposible to open database");
     }
 
-    return a.exec();*/
+    return a.exec();
+    */
+
+    QCoreApplication a(argc, argv);
+    qDebug() << "drivers: "<< QSqlDatabase::drivers() << endl;
+    return a.exec();
+
+
+    /*
     string word = "doggy";
     cout << Porter2Stemmer::stem(word) << endl;
     return 0;
+    */
 }
